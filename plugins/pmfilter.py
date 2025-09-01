@@ -2046,7 +2046,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇs •', url="t.me/zoroversefiles")
        ],[
             InlineKeyboardButton('• Corn Search •', url="https://t.me/akadulthub_bot"),
-            InlineKeyboardButton('• AdultBot •', url="https://t.me/adultheavenbot")
+            InlineKeyboardButton('• AdultBot •', url="https://t.me/AdultHavenBot")
        ],[
             InlineKeyboardButton('• JᴏɴSɴᴏᴡFɪʟᴛᴇʀBᴏᴛ •', url="https://t.me/JonSnowFilterBot")
        ],[ 
