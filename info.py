@@ -28,12 +28,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://envs.sh/WdA.jpg https://envs.sh/Wdj.jpg')).split()  # Sample pic
-NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/Wdj.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/Wdj.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://envs.sh/Wdj.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/Wdj.jpg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/Wdj.jpg')).split()  # Fsub pic
+PICS = (environ.get('PICS', 'https://i.ibb.co/tTPkWsH8/photo-2025-09-02-06-22-18-7545373626212548624.jpg https://i.ibb.co/Y7qYvSny/photo-2025-09-02-06-22-28-7545373686342090756.jpg')).split()  # Sample pic
+NOR_IMG = environ.get("NOR_IMG", "https://i.ibb.co/yFy049vD/photo-2025-09-02-06-20-30-7545372930427846676.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://i.ibb.co/cSYwBVSY/photo-2025-09-02-06-27-24-7545374708544307204.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://i.ibb.co/jPyXMDRX/photo-2025-09-02-06-22-22-7545373879615619088.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.ibb.co/gb1tkvFh/photo-2025-09-02-06-29-28-7545375241120251920.jpg'))
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/ezz.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
@@ -49,7 +49,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002401879443')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002505014127')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1001785093771').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002827553840').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1001785093771').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
